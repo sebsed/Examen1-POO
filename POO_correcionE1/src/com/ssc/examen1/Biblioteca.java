@@ -9,8 +9,8 @@ public class Biblioteca {
 	
 	public String nombre;
 	public String direccion;
-	private Estudiante estudiantes[];
-	private Profesor profesores[];
+	private Estudiante estudiantes[] = new Estudiante[30];
+	private Profesor profesores[] = new Profesor[30];
 	private int no_estudiantes = 0;
 	private int no_profesores = 0;
 	
@@ -27,16 +27,17 @@ public class Biblioteca {
 	/**
 	 * Método para agregar un nuevo estudiante al conjunto de usuarios
 	 * @param nombre
-	 * @param edad
 	 * @param cuenta
 	 * @param semestre
-	 * @param promedio
+	 * @param libros
+	 * @param semanas
 	 */
-	public void agregarEstudiante(String nombre, String cuenta, int semestre) {
+	public void agregarEstudiante(String nombre, String cuenta, int semestre, int libros, int semanas) {
 		Estudiante est = new Estudiante();
 		est.setNombre(nombre);
 		est.setCuenta(cuenta);
 		est.setSemestre(semestre);
+		est.prestamo(libros, semanas);
 		estudiantes[no_estudiantes] = est;
 		no_estudiantes++;
 	}
@@ -44,16 +45,15 @@ public class Biblioteca {
 	/**
 	 * Método para agregar un nuevo profesor al conjunto de usuarios
 	 * @param nombre
-	 * @param edad
 	 * @param cuenta
-	 * @param antiguedad
 	 * @param departamento
 	 */
-	public void agregarProfesor(String nombre, String cuenta, String departamento) {
+	public void agregarProfesor(String nombre, String cuenta, String departamento, int libros, int semanas) {
 		Profesor prof = new Profesor();
 		prof.setNombre(nombre);
 		prof.setCuenta(cuenta);
 		prof.setDepartamento(departamento);
+		prof.prestamo(libros, semanas);
 		profesores[no_profesores] = prof;
 		no_profesores++;
 	}
