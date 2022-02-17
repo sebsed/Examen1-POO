@@ -1,6 +1,7 @@
 # Examen1-POO
-### Sebastián Sedano Castañeda
+### Autor: Sebastián Sedano Castañeda
 
+**Planteamiento**
 Una biblioteca puede tener distintos tipos de  usuarios, por ejemplo: estudiantes  y  profesores. Ambos cuentan con un método  llamado préstamo,  a los estudiantes se les pueden prestar tres libros por una semana, en el caso de los profesores, cinco libros y dos semanas. 
 
 **Especificaciones:***
