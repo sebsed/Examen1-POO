@@ -1,4 +1,9 @@
 # Examen1-POO
-## Sebastián Sedano Castañeda
+### Sebastián Sedano Castañeda
 
-Una biblioteca puede tener distintos tipos de  usuarios, por ejemploestudiantes  y  profesores. Ambos cuentan con un método  llamadopréstamo,  a los estudiantes se les pueden prestar tres libros por unasemana, en el caso de los profesores, cinco libros y dos semanas. 
+Una biblioteca puede tener distintos tipos de  usuarios, por ejemplo: estudiantes  y  profesores. Ambos cuentan con un método  llamado préstamo,  a los estudiantes se les pueden prestar tres libros por una semana, en el caso de los profesores, cinco libros y dos semanas. 
+
+**Especificaciones:***
+- Generar   un   objeto   de   tipo   biblioteca   y   agregar   un   usuario Estudiante y dos Profesores.
+- Se deberá imprimir el nombre de la biblioteca y todos los datos de los usuarios que tiene asignados. 
+- Los datos de los usuarios se imprimen através de la empresa.
