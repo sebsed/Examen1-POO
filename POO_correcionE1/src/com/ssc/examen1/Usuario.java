@@ -8,7 +8,7 @@ package com.ssc.examen1;
 public class Usuario {
 	
 	private String nombre;
-	private int cuenta;
+	private String cuenta;
 	private int libros_prestados;
 	private int semanas;
 	
@@ -37,11 +37,11 @@ public class Usuario {
 		this.nombre = nombre;
 	}
 
-	public int getCuenta() {
+	public String getCuenta() {
 		return cuenta;
 	}
 
-	public void setCuenta(int cuenta) {
+	public void setCuenta(String cuenta) {
 		this.cuenta = cuenta;
 	}
 
