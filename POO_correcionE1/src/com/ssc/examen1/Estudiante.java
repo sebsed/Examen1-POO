@@ -8,24 +8,23 @@ package com.ssc.examen1;
 public class Estudiante extends Usuario {
 	
 	private int semestre;
-	private int promedio;
 	
 	/**
 	 * Método para realizar préstamo a nombre de estudiante
 	 * @param no_libros
-	 * @param semanas
+	 * @param semana
 	 */
-	public void prestamo(int no_libros, int semanas){
+	public void prestamo(int no_libros, int semana){
 		if(no_libros>3){
 			System.out.println("No se puede prestar mas de 3 libros");
 		}
 		else{
-			if(semanas>1){
+			if(semana>1){
 				System.out.println("No se puede prestar mas de 1 semana");
 			}
 			else{
-				this.setPrestamo(no_libros);
-				this.setSemanas(semanas);
+				this.setPrestamo(no_libros);;
+				this.setSemanas(semana);;
 			}
 		}
 	}
@@ -45,20 +44,19 @@ public class Estudiante extends Usuario {
 		}
 	}
 
+	/**
+	 * Método para obtener semestre actual de estudiante
+	 * @return semestre
+	 */
 	public int getSemestre() {
 		return semestre;
 	}
 
+	/**
+	 * Método para ingresar semestre actual del estudiante
+	 * @param semestre
+	 */
 	public void setSemestre(int semestre) {
 		this.semestre = semestre;
-	}
-
-	public int getPromedio() {
-		return promedio;
-	}
-
-	public void setPromedio(int promedio) {
-		this.promedio = promedio;
-	} 
-	
+	}	
 }
